@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+    \node[below] at (-0.5, -2) {Column};
+    \draw[thick,magenta] (-1.5,2.5)--(-1.5,-2);
+    \draw[thick,magenta] (0.5,2.5)--(0.5,-2);
+    \draw[dashed, thick, brown] (-0.5,2) -- (-0.5,-2);
+    \draw[thick] (-2,2) -- (4,2) -- (4,-1) -- (0.4,-2);
+    \coordinate (A) at (-1.5,2.5);
+    \coordinate (B) at (0.5,2.5);
+    \draw[magenta, thick] (-0.834, 2.5) arc[start angle=0, end angle=180, radius=0.333cm];
+    \draw[magenta, thick] (-0.834, 2.5) arc[start angle=-180, end angle=0, radius=0.333cm];
+    \draw[magenta, thick] (0.498, 2.5) arc[start angle=0, end angle=180, radius=0.333cm];
+    \draw[magenta, thick] (-1.5, -2) arc[start angle=-180, end angle=0, radius=0.333cm];
+    \draw[magenta, thick] (-0.168, -2) arc[start angle=0, end angle=180, radius=0.333cm];
+    \draw[magenta, thick] (-0.168, -2) arc[start angle=-180, end angle=0, radius=0.333cm];
+    \draw[thick, red, ->] (3.5,2.5) -- ++(0,-0.5);
+    \node[right] at (3.5,2.5) {$P$};
+    \draw[<->, thin] (-0.5,2.3) -- node[above] {$e$} ++(4,0);
+    \filldraw[red] (-0.5,0.75) circle (2pt) node[left] {$U$};
+    \filldraw[red] (-0.5,-0.75) circle (2pt) node[left] {$V$};
+    \draw[<->, thin] (-0.75,0.75) -- node[left] {$2a$} ++(0,-1.5);
+    \node at (2,0) {Bracket};
+\end{tikzpicture}

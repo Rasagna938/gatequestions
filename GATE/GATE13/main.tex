@@ -1,0 +1,190 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+
+\usepackage{booktabs}
+\usepackage{pgfplots}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usetikzlibrary{patterns}
+\usepackage{siunitx}
+\pagestyle{empty}
+\usetikzlibrary{calc}
+\usepackage[margin=1in]{geometry}
+\usepackage{pgffor}
+\usepackage{float}
+\usepackage{pgf-pie}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+% Marks the beginning of the document
+\pgfplotsset{compat=1.18}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2024-ST-'53-65'}
+\author{EE24BTECH11023}
+%\maketitle
+%\newpage
+%\bigskip
+\maketitle
+
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+
+\begin{enumerate}
+    \item Which one of the following statements is TRUE about the continuity equation $$\frac{\partial u}{\partial x}+\frac{\partial u}{\partial y}+\frac{\partial u}{\partial z}$$
+ (where $u$, $v$, $w$ are the velocity components along the $x$, $y$, and $z$ coordinates, respectively):
+    \begin{enumerate}
+        \item The equation is valid only for steady incompressible flows.
+        \item The equation is valid for both steady and unsteady incompressible flows.
+        \item The equation is valid only for steady compressible flows.
+        \item The equation is valid only for unsteady compressible flows.
+    \end{enumerate}
+
+    \item The head loss $(K_L)$ associated with the flow entry of water to an internal passage depends on the shape of the entry. The following figure shows three different types of flow entry into a pipe. Which one of the following relationships correctly represents the head loss associated with the three different flow entries?
+    \begin{figure}[H]
+        \centering
+        \input{figs/Q2.tex}  
+    \end{figure}
+    \begin{enumerate}
+        \item $(K_L)_a > (K_L)_b > (K_L)_c$
+        \item $(K_L)_b > (K_L)_a > (K_L)_c$
+        \item $(K_L)_b \leq (K_L)_a = (K_L)_c$
+        \item $(K_L)_b < (K_L)_a < (K_L)_c$
+    \end{enumerate}
+
+    \item The form and friction drags together contribute to the total drag when flow of air occurs past any object. Two orientations of a finite flat plate are shown in the figure. In Orientation-1, the plate is placed perpendicular to the flow, while in Orientation-2, the plate is placed parallel to the flow. If the velocity $(V)$ of air in both orientations is the same, which one of the following options is TRUE?
+    \begin{figure}[H]
+        \centering
+        \input{figs/Q3.tex}  
+    \end{figure}
+    \begin{enumerate}
+        \item Orientation-1 has higher form drag and lower friction drag, and Orientation-2 has lower form drag and higher friction drag.
+        \item Orientation-1 has lower form drag and lower friction drag, and Orientation-2 has higher form drag and higher friction drag.
+        \item Orientation-1 has lower form drag and higher friction drag, and Orientation-2 has higher form drag and lower friction drag.
+        \item Orientation-1 has higher form drag and higher friction drag, and Orientation-2 has lower form drag and lower friction drag.
+    \end{enumerate}
+
+    \item A spherical ball is steadily supported against gravity by an upward air jet. Take acceleration due to gravity to be $g = 10 \, \text{m/s}^2$. The mass flow rate of air, reaching the ball, is $0.01 \, \text{kg/s}$, and the air reaches the ball at an upward velocity of $3 \, \text{m/s}$. Neglecting the buoyancy force, and using the principle of integral momentum balance, the mass (in grams, up to one decimal place) of the ball is {\underline{\hspace{2cm}}}.
+    \begin{figure}[H]
+        \centering
+        \input{figs/Q4.tex}  
+    \end{figure}
+
+    \item The incompressible flow of air over a curved surface having possible flow separation is schematically shown in the figure. Two zones P and Q are indicated in the figure. Which one of the following combinations is TRUE for zones P and Q?
+    \begin{figure}[H]
+        \centering
+        \input{figs/Q5.tex}  
+    \end{figure}
+    (a) Acceleration of flow,(b) Deceleration of flow,(c) Adverse pressure gradient,(d)Favorable pressure gradient,(e) No flow separation (f) Possible flow seperation.
+    \begin{enumerate}
+        
+        \item \underline{P: (a), (d), (e)} and \underline{Q: (b), (c), (f)}
+        \item \underline{P: (a), (c), (e)} and \underline{Q: (a), (d), (e)}
+        \item \underline{P: (a), (d), (f)} and \underline{Q: (b), (d), (e)}
+        \item \underline{P: (a), (c), (e)} and \underline{Q: (a), (f), (e)}
+            \end{enumerate}
+
+    \item A spherical metal ball (of density $\rho_s$ and diameter $D$), attached to a string, is exposed to a crossflow (of velocity $U_{\infty}$) of a viscous fluid (of viscosity $\mu$ and density $\rho_f$). Due to the crossflow, the string makes an angle of inclination, $\theta$, with the top surface as shown in the figure. The acceleration due to gravity is denoted by $g$. For this flow, Reynolds number, $\text{Re}=\frac{{\rho_f}U_{\infty}D}{\mu} \ll 1$ and buoyancy force in the fluid is negligible compared to viscous force. Assuming the string to be weightless and offering negligible drag, derive the expression for $\theta$ is 
+    \begin{figure}[H]
+        \centering
+        \input{figs/Q6.tex}  
+    \end{figure}
+    \begin{enumerate}
+        \item $\tan^{-1}({\frac{1}{18}}{\frac{D^2{\rho_s}^2{g}}{U_{\infty} \mu \rho_f}}) $
+        \item $\tan^{-1}({\frac{1}{18}}{\frac{D^2{\rho_f}{g}}{U_{\infty} \mu}})$
+        \item $\tan^{-1}({\frac{2}{9}}{\frac{D^2{\rho_s}{g}}{U_{\infty} \mu}})$
+        \item $\tan^{-1}({\frac{1}{18}}{\frac{D^2{\rho_s}{g}}{U_{\infty} \mu}})$
+    \end{enumerate}
+
+    \item In a Cartesian coordinate system, a steady, incompressible velocity field of a Newtonian fluid is given by 
+    $$\vec{V} = u_0(1 - ay^2) \, \hat{i}$$
+    Here, $V$ is the velocity vector in $m/s$, i is the unit vector in the x-direction,$u_0$ is a positive, real constant (in $m/s$), and $a$ is a positive, real constant (in $m^{-2}$). The viscosity of the fluid is $\mu$ (in Pa$\cdot$s). Determine the absolute value of the pressure gradient (in Pa/m) is 
+    \begin{enumerate}
+        \item $a \mu u_0$
+        \item $2a \mu u_0$
+        \item $3a \mu u_0$
+        \item $4a \mu u_0$
+
+    \end{enumerate}
+
+    \item In a laminar, incompressible, fully-developed pipe flow of a Newtonian fluid,as shown in the figure, the velocity profile over a cross-section is given by $$v = U(1 - r^2/R^2)$$ where $U$ is a constant. The pipe length is $L$ and the fluid viscosity is $\mu$. The power $P$ required to sustain the flow is expressed as $P = c\mu LU^2$, where $c$ is a dimensionless constant.The value of the constant $c$ (up to one decimal place) is {\underline{\hspace{2cm}}}.
+    \begin{figure}[H]
+        \centering
+        \input{figs/Q8.tex}  
+    \end{figure}
+
+    \item The two-dimensional velocity field $\vec{V}$ of a flow in a Cartesian coordinate system is given in dimensionless form by $$\vec{V} = (x^2-axy) \, \hat{i} + (bxy-\frac{y^2}{2}) \, \hat{j}$$
+    Here, i and j are the unit vectors along the x and y directions respectively, $a$ and $b$ are independent of x,y and time. If the flow is incompressible,then the value of $(a - b)$, up to one decimal place is {\underline{\hspace{2cm}}}.
+
+    \item For the configuration shown in the figure, oil of density $800 \, \text{kg/m}^3$ lies above water of density $1000 \, \text{kg/m}^3$. Assuming hydrostatic conditions and acceleration due to gravity $g = 10 \, \text{m/s}^2$, the length $L$ (in meters, up to one decimal place) of water in the inclined tube {\underline{\hspace{2cm}}}.
+     \begin{figure}[H]
+        \centering
+        \input{figs/Q10.tex}  
+    \end{figure}
+
+    \item A two-dimensional Eulerian velocity field is given (in m/s) by $\vec{V} = \left( \sqrt{5} x \right) \, \hat{i} - \left( \sqrt{12} y \right) \, \hat{j}$, where $x$ and $y$ are the coordinates (in meters) in a Cartesian coordinate system.The magnitude of the acceleration (in $\text{m/s}^2$, up to one decimal place) of a fluid particle at $x = 1 \, \text{m}$ and $y = -1 \, \text{m}$ is {\underline{\hspace{2cm}}}.
+   
+
+    \item A large pump is to deliver oil at an average velocity $V$ of  1.5$m/s$. The pump has an impeller diameter $(D)$ of 40cm and the pressure rise across the pump is $400{kPa}$. To design this pump, a lab-scale model pump with an impeller diameter of $4{cm}$ is to be used with water as the fluid. The viscosity $(\mu)$ of the oil is 100 times that of water, and the densities $(\rho)$ of oil and water are identical. A complete geometric similarity is maintained between the model and prototype. If the pressure rise is a function only of $V$, $D$, $\rho$, and $\mu$, the pressure rise (in kPa, up to one decimal place) across the model pump is {\underline{\hspace{2cm}}}.
+
+    \item Water (density = $1000  \text{kg/m}^3$) enters steadily into a horizontal pipe bend, which is part of a larger piping system, as shown in the figure. The volumetric flow rate of water is $0.1 \, \text{m}^3/\text{s}$. The gage pressure at the inlet is $500\text{kPa}$, while the exit is open to the atmosphere. The $x$-component of the force on the support $F_x$.The absolute value of $F_x$(in kN, up to one decimal place) is {\underline{\hspace{2cm}}}.
+    \begin{figure}[H]
+        \centering
+        \input{figs/Q13.tex}  
+    \end{figure}
+
+\end{enumerate}
+
+\end{document}
+
+

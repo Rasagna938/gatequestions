@@ -1,0 +1,11 @@
+\begin{tikzpicture}[line cap=round, line join=round, >=stealth]
+    \draw[thick] (0,2) .. controls (1,1) and (1,-1) .. (0.8,-2); % Left curve
+    \draw[thick] (2,2) .. controls (1,1) and (1,-1) .. (1.2,-2); % Right curve
+    \node at (1,2.5) {Spherical ball};
+    \draw[->] (1,2.3)--(1,1);
+    \shade[ball color=black] (1,0.8) circle (0.2);
+    \draw[thick] (1,0.8) circle (0.2); 
+    \draw[->, thick] (1.5,0.8) -- (1.5,0) node[midway,right] {$g$};
+    \draw[<-, thick] (1,-1.5) -- (1,-2.2);
+    \node at (0.8,-2.5) {air jet};
+\end{tikzpicture}

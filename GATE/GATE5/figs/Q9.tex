@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+    \draw[line width=0.5mm] (-1.5,0) -- (-1.5,5);
+    \draw[line width=0.5mm] (1.5,0) -- (1.5,5);
+    \draw[line width=0.5mm] (-1.5,4.5) .. controls (0,2.5) and (0,2.5) .. (1.5,4.5);
+    \fill[gray!50] (-1.5,0) -- (-1.5,4.5) .. controls (0,2.5) and (0,2.5) .. (1.5,4.5) -- (1.5,0) -- cycle;
+        \draw[dashed] (0,5.5) -- (0,0);
+    \draw[dashed] (-1.5,3.75) -- (2.5,3.75);
+    \draw[->] (0.5,5) arc[start angle=0, end angle=300, radius=0.5] ;
+    \draw[<->] (1.8,3.75) -- (1.8,4.5) node[midway,right] {$h_1$};
+    \draw[<->] (1.8,3) -- (1.8,3.75) node[midway,right] {$h_2$};
+    \draw[<->] (2.25,0) -- (2.25,3.75) node[midway,right] {$h_0$};
+        \draw[<->] (0, -0.3) -- (1.5, -0.3) node[midway, below] {$R$};
+    \node at (-0.2,5.2) {$z$};
+\end{tikzpicture}
+

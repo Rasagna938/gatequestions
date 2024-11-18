@@ -1,0 +1,28 @@
+\pgfplotsset{compat=1.17}
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=10cm,
+            height=7cm,
+            ybar,
+            bar width=7pt,
+            symbolic x coords={2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007},
+            xtick=data,
+            ymin=0, ymax=120,
+            ytick={0,10,20,30,40,50,60,70,80,90,100,110,120},
+            legend style={at={(0.5,1.05)}, anchor=south, legend columns=2, font=\small, draw=none},
+            legend style={at={(0.5,0.95)}, anchor=north, legend columns=1, font=\small, draw=none}, 
+            enlarge x limits=0.2,
+            ymajorgrids=true,
+            grid style=dotted, 
+            axis line style={thick, black},
+        ]
+        \addplot+[ybar, color=red, fill=red] coordinates {
+            (2000,50) (2001,60) (2002,70) (2003,60) (2004,70) (2005,70) (2006,100) (2007,110)
+        };
+        \addplot+[ybar, color=blue, fill=blue] coordinates {
+            (2000,40) (2001,50) (2002,60) (2003,70) (2004,80) (2005,90) (2006,120) (2007,120)
+        };
+        \legend{Exports, Imports}
+        \end{axis}
+    \end{tikzpicture}
+        

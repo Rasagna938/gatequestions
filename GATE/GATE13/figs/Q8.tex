@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+    \draw[thick] (-4,0) -- (4,0); 
+    \draw[thick] (-4,1.5) -- (4,1.5);
+    \draw[dashed] (-4,-0.5)--(-4,1.5);
+    \draw[dashed](4,-0.5)--(4,1.5);
+    \node at (0,1.8) {Laminar, fully-developed pipe flow};
+    \draw[dashed] (-4.5,0.75) -- (4.5,0.75);
+    \draw[->] (2,0.75) -- (3.5,0.75) node[above] {$u$};
+    \draw[<->] (-0.75,0.75) -- (-0.75,1.5) node[midway, right] {$R$};
+    \draw[->] (0.75,0.75) -- (0.75,1) node[midway, left] {$r$};
+    \draw[|<->|] (-4,-0.3) -- (4,-0.3) node[midway, below] {$L$};
+    \draw[->] (0.75,0.75) -- (1.25,0.75) node[midway, below] {$z$};
+\end{tikzpicture}
